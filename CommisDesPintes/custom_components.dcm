@@ -1,39 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP ICM7556
-D Dual CMOS General Purpose Timer, DIP-14/SOIC-14
-K dual timer 556
-F http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf
-$ENDCMP
-#
 $CMP LM556
 D Dual Timer, DIP-14/SOIC-14
 K dual timer
 F http://www.ti.com/lit/ds/symlink/lm556.pdf
 $ENDCMP
-#
-$CMP NA556
-D Dual Precision Timers, DIP-14/SOIC-14/SSOP-14
-K dual timer
-F http://www.ti.com/lit/ds/symlink/se556.pdf
-$ENDCMP
-#
-$CMP NE556
-D Dual Precision Timers, DIP-14/SOIC-14
-K dual timer
-F http://www.ti.com/lit/ds/symlink/ne556.pdf
-$ENDCMP
-#
-$CMP SA556
-D Dual Precision Timers, DIP-14/SOIC-14
-K dual timer
-F http://www.ti.com/lit/ds/symlink/ne556.pdf
-$ENDCMP
-#
-$CMP SE556
-D Dual Precision Timers, DIP-14/SOIC-14
-K dual timer
-F http://www.ti.com/lit/ds/symlink/ne556.pdf
-$ENDCMP
-#
 #End Doc Library
