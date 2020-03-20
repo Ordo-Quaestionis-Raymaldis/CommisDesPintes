@@ -1,0 +1,366 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R?
+U 1 1 5E74DF30
+P 6850 1700
+F 0 "R?" V 6643 1700 50  0000 C CNN
+F 1 "R" V 6734 1700 50  0000 C CNN
+F 2 "" V 6780 1700 50  0001 C CNN
+F 3 "~" H 6850 1700 50  0001 C CNN
+	1    6850 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E74E928
+P 6850 2050
+F 0 "R?" V 6643 2050 50  0000 C CNN
+F 1 "R" V 6734 2050 50  0000 C CNN
+F 2 "" V 6780 2050 50  0001 C CNN
+F 3 "~" H 6850 2050 50  0001 C CNN
+	1    6850 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E74F4B2
+P 7150 1700
+F 0 "D?" H 7150 1484 50  0000 C CNN
+F 1 "D" H 7150 1575 50  0000 C CNN
+F 2 "" H 7150 1700 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+	1    7150 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E7503BC
+P 7150 2050
+F 0 "D?" H 7150 1834 50  0000 C CNN
+F 1 "D" H 7150 1925 50  0000 C CNN
+F 2 "" H 7150 2050 50  0001 C CNN
+F 3 "~" H 7150 2050 50  0001 C CNN
+	1    7150 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E753931
+P 4250 2600
+F 0 "#PWR?" H 4250 2350 50  0001 C CNN
+F 1 "GND" H 4255 2427 50  0000 C CNN
+F 2 "" H 4250 2600 50  0001 C CNN
+F 3 "" H 4250 2600 50  0001 C CNN
+	1    4250 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E7586BC
+P 4250 3300
+F 0 "#PWR?" H 4250 3150 50  0001 C CNN
+F 1 "VCC" H 4267 3473 50  0000 C CNN
+F 2 "" H 4250 3300 50  0001 C CNN
+F 3 "" H 4250 3300 50  0001 C CNN
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E7586C2
+P 4250 4300
+F 0 "#PWR?" H 4250 4050 50  0001 C CNN
+F 1 "GND" H 4255 4127 50  0000 C CNN
+F 2 "" H 4250 4300 50  0001 C CNN
+F 3 "" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+Text Notes 2900 1300 0    50   ~ 0
+Monostable Switch
+Text Notes 2900 3050 0    50   ~ 0
+Astable Switch
+$Comp
+L Device:R R?
+U 1 1 5E76700E
+P 3650 1900
+F 0 "R?" H 3500 1950 50  0000 L CNN
+F 1 "100kR" H 3600 1850 50  0000 R CNN
+F 2 "" V 3580 1900 50  0001 C CNN
+F 3 "~" H 3650 1900 50  0001 C CNN
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E76C54A
+P 4250 1550
+F 0 "#PWR?" H 4250 1400 50  0001 C CNN
+F 1 "VCC" H 4267 1723 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Text Label 5000 2050 2    50   ~ 0
+M_Out
+Wire Wire Line
+	4750 2050 5000 2050
+$Comp
+L power:GND #PWR?
+U 1 1 5E76FC80
+P 4800 2550
+F 0 "#PWR?" H 4800 2300 50  0001 C CNN
+F 1 "GND" H 4805 2377 50  0000 C CNN
+F 2 "" H 4800 2550 50  0001 C CNN
+F 3 "" H 4800 2550 50  0001 C CNN
+	1    4800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_components:LM556 U?
+U 1 1 5E77388B
+P 4250 2150
+F 0 "U?" H 4550 1750 50  0000 C CNN
+F 1 "LM556" H 4000 2500 50  0000 C CNN
+F 2 "" H 4250 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm556.pdf" H 4250 2150 50  0001 C CNN
+	1    4250 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_components:LM556 U?
+U 2 1 5E7746EE
+P 4250 3850
+F 0 "U?" H 4550 3450 50  0000 C CNN
+F 1 "LM556" H 4000 4200 50  0000 C CNN
+F 2 "" H 4250 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm556.pdf" H 4250 3850 50  0001 C CNN
+	2    4250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1550 4250 1650
+Wire Wire Line
+	3750 1650 3750 1950
+Wire Wire Line
+	3750 1650 4250 1650
+Connection ~ 4250 1650
+Wire Wire Line
+	4250 1650 4250 1750
+Wire Wire Line
+	3750 1650 3650 1650
+Connection ~ 3750 1650
+Wire Wire Line
+	3650 1650 3650 1750
+Wire Wire Line
+	3650 2050 3650 2100
+Wire Wire Line
+	3650 2100 3750 2100
+Wire Wire Line
+	3650 2250 3750 2250
+Connection ~ 3650 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5E76991A
+P 3150 2300
+F 0 "#PWR?" H 3150 2050 50  0001 C CNN
+F 1 "GND" H 3155 2127 50  0000 C CNN
+F 2 "" H 3150 2300 50  0001 C CNN
+F 3 "" H 3150 2300 50  0001 C CNN
+	1    3150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E7692BC
+P 3400 2250
+F 0 "C?" V 3550 2250 50  0000 C CNN
+F 1 "47uF" V 3250 2250 50  0000 C CNN
+F 2 "" H 3438 2100 50  0001 C CNN
+F 3 "~" H 3400 2250 50  0001 C CNN
+	1    3400 2250
+	0    1    1    0   
+$EndComp
+Text Label 3500 2400 0    50   ~ 0
+trigger
+Wire Wire Line
+	3500 2400 3750 2400
+Wire Wire Line
+	3550 2250 3650 2250
+Connection ~ 3650 2250
+Wire Wire Line
+	3650 2100 3650 2250
+$Comp
+L Device:C C?
+U 1 1 5E785122
+P 4800 2400
+F 0 "C?" H 4685 2354 50  0000 R CNN
+F 1 "10nF" H 4685 2445 50  0000 R CNN
+F 2 "" H 4838 2250 50  0001 C CNN
+F 3 "~" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 2250 4800 2250
+Text Label 3500 3650 0    50   ~ 0
+M_Out
+Wire Wire Line
+	4250 3450 4250 3350
+Wire Wire Line
+	4250 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 3450
+Connection ~ 4250 3350
+Wire Wire Line
+	4250 3350 4250 3300
+$Comp
+L Device:R R?
+U 1 1 5E78DDFF
+P 3350 3600
+F 0 "R?" H 3400 3550 50  0000 L CNN
+F 1 "8.2kR" H 3400 3650 50  0000 L CNN
+F 2 "" V 3280 3600 50  0001 C CNN
+F 3 "~" H 3350 3600 50  0001 C CNN
+	1    3350 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E78DF9F
+P 3350 4000
+F 0 "R?" H 3200 4050 50  0000 L CNN
+F 1 "68kR" H 3300 3950 50  0000 R CNN
+F 2 "" V 3280 4000 50  0001 C CNN
+F 3 "~" H 3350 4000 50  0001 C CNN
+	1    3350 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4150 3350 4200
+Wire Wire Line
+	3350 4200 3650 4200
+Wire Wire Line
+	3650 4200 3650 4100
+Wire Wire Line
+	3650 4100 3750 4100
+Wire Wire Line
+	3650 4100 3650 3950
+Wire Wire Line
+	3650 3950 3750 3950
+Connection ~ 3650 4100
+Wire Wire Line
+	3350 3750 3350 3800
+Wire Wire Line
+	3350 3800 3750 3800
+Connection ~ 3350 3800
+Wire Wire Line
+	3350 3800 3350 3850
+Wire Wire Line
+	3500 3650 3750 3650
+NoConn ~ 4750 3950
+$Comp
+L Device:C C?
+U 1 1 5E7910BE
+P 3350 4400
+F 0 "C?" H 3450 4350 50  0000 L CNN
+F 1 "4.7uF" H 3450 4450 50  0000 L CNN
+F 2 "" H 3388 4250 50  0001 C CNN
+F 3 "~" H 3350 4400 50  0001 C CNN
+	1    3350 4400
+	-1   0    0    1   
+$EndComp
+Connection ~ 3350 4200
+Wire Wire Line
+	3350 4250 3350 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5E791E1C
+P 3350 4550
+F 0 "#PWR?" H 3350 4300 50  0001 C CNN
+F 1 "GND" H 3355 4377 50  0000 C CNN
+F 2 "" H 3350 4550 50  0001 C CNN
+F 3 "" H 3350 4550 50  0001 C CNN
+	1    3350 4550
+	1    0    0    -1  
+$EndComp
+Text Label 4950 3750 2    50   ~ 0
+Out
+Wire Wire Line
+	4950 3750 4750 3750
+Text Notes 3350 2200 2    50   ~ 0
+Electrolytic
+$Comp
+L power:VCC #PWR?
+U 1 1 5E7962A2
+P 1200 1500
+F 0 "#PWR?" H 1200 1350 50  0001 C CNN
+F 1 "VCC" H 1217 1673 50  0000 C CNN
+F 2 "" H 1200 1500 50  0001 C CNN
+F 3 "" H 1200 1500 50  0001 C CNN
+	1    1200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1500 1300 1500
+Text Label 1950 1500 2    50   ~ 0
+trigger
+Wire Wire Line
+	1950 1500 1700 1500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E79818F
+P 1500 1500
+F 0 "SW?" H 1500 1400 50  0000 C CNN
+F 1 "SW_Push" H 1500 1694 50  0000 C CNN
+F 2 "" H 1500 1700 50  0001 C CNN
+F 3 "~" H 1500 1700 50  0001 C CNN
+	1    1500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2300 3150 2250
+Wire Wire Line
+	3150 2250 3250 2250
+Wire Notes Line
+	5150 2850 5150 1300
+Wire Notes Line
+	5150 1300 2900 1300
+Wire Notes Line
+	2900 1300 2900 2850
+Wire Notes Line
+	2900 2850 5150 2850
+Wire Notes Line
+	5150 4850 5150 3050
+Wire Notes Line
+	2900 3050 2900 4850
+Wire Notes Line
+	1100 1200 2050 1200
+Wire Notes Line
+	2050 1200 2050 1750
+Wire Notes Line
+	2050 1750 1100 1750
+Wire Notes Line
+	1100 1750 1100 1200
+Text Notes 1100 1200 0    50   ~ 0
+Trigger Switch
+Wire Notes Line
+	2900 4850 5150 4850
+Wire Notes Line
+	2900 3050 5150 3050
+$EndSCHEMATC
