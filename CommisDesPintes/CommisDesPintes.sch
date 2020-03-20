@@ -423,4 +423,6 @@ Wire Wire Line
 	7300 2550 7300 2650
 Wire Wire Line
 	7400 3500 7400 2550
+Text Notes 6400 3400 0    50   ~ 0
+IRF7309PbF
 $EndSCHEMATC
