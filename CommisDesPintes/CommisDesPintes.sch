@@ -14,50 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R R?
-U 1 1 5E74DF30
-P 6850 1700
-F 0 "R?" V 6643 1700 50  0000 C CNN
-F 1 "R" V 6734 1700 50  0000 C CNN
-F 2 "" V 6780 1700 50  0001 C CNN
-F 3 "~" H 6850 1700 50  0001 C CNN
-	1    6850 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E74E928
-P 6850 2050
-F 0 "R?" V 6643 2050 50  0000 C CNN
-F 1 "R" V 6734 2050 50  0000 C CNN
-F 2 "" V 6780 2050 50  0001 C CNN
-F 3 "~" H 6850 2050 50  0001 C CNN
-	1    6850 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5E74F4B2
-P 7150 1700
-F 0 "D?" H 7150 1484 50  0000 C CNN
-F 1 "D" H 7150 1575 50  0000 C CNN
-F 2 "" H 7150 1700 50  0001 C CNN
-F 3 "~" H 7150 1700 50  0001 C CNN
-	1    7150 1700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D?
-U 1 1 5E7503BC
-P 7150 2050
-F 0 "D?" H 7150 1834 50  0000 C CNN
-F 1 "D" H 7150 1925 50  0000 C CNN
-F 2 "" H 7150 2050 50  0001 C CNN
-F 3 "~" H 7150 2050 50  0001 C CNN
-	1    7150 2050
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5E753931
 P 4250 2600
@@ -140,17 +96,6 @@ F 1 "LM556" H 4000 2500 50  0000 C CNN
 F 2 "" H 4250 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm556.pdf" H 4250 2150 50  0001 C CNN
 	1    4250 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L custom_components:LM556 U?
-U 2 1 5E7746EE
-P 4250 3850
-F 0 "U?" H 4550 3450 50  0000 C CNN
-F 1 "LM556" H 4000 4200 50  0000 C CNN
-F 2 "" H 4250 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm556.pdf" H 4250 3850 50  0001 C CNN
-	2    4250 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -363,4 +308,119 @@ Wire Notes Line
 	2900 4850 5150 4850
 Wire Notes Line
 	2900 3050 5150 3050
+$Comp
+L custom_components:LM556 U?
+U 1 1 5E7746EE
+P 4250 3850
+F 0 "U?" H 4550 3450 50  0000 C CNN
+F 1 "LM556" H 4000 4200 50  0000 C CNN
+F 2 "" H 4250 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm556.pdf" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom_components:MOSFET_Pair_PN QN?
+U 1 1 5E7E8347
+P 6650 3050
+F 0 "QN?" H 6650 3715 50  0000 C CNN
+F 1 "MOSFET_Pair_PN" H 6650 3624 50  0000 C CNN
+F 2 "" H 6800 3400 50  0001 C CNN
+F 3 "" H 6800 3400 50  0001 C CNN
+	1    6650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2800 6200 2800
+Wire Wire Line
+	6200 2800 6200 3150
+Wire Wire Line
+	6200 3150 6300 3150
+Wire Wire Line
+	7000 2800 7050 2800
+Wire Wire Line
+	7050 2800 7050 2650
+Wire Wire Line
+	7050 2650 7000 2650
+Wire Wire Line
+	7050 2650 7300 2650
+Connection ~ 7050 2650
+Wire Wire Line
+	6200 2800 6050 2800
+Connection ~ 6200 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5E7F86BA
+P 5850 2900
+F 0 "#PWR?" H 5850 2650 50  0001 C CNN
+F 1 "GND" H 5855 2727 50  0000 C CNN
+F 2 "" H 5850 2900 50  0001 C CNN
+F 3 "" H 5850 2900 50  0001 C CNN
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
+Text Label 6050 2800 0    50   ~ 0
+Out
+$Comp
+L power:+12V #PWR?
+U 1 1 5E7FA31B
+P 7700 2550
+F 0 "#PWR?" H 7700 2400 50  0001 C CNN
+F 1 "+12V" H 7715 2723 50  0000 C CNN
+F 2 "" H 7700 2550 50  0001 C CNN
+F 3 "" H 7700 2550 50  0001 C CNN
+	1    7700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3150 7050 3150
+Wire Wire Line
+	7050 3150 7050 3000
+Wire Wire Line
+	7050 3000 7000 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5E80069B
+P 7050 3250
+F 0 "#PWR?" H 7050 3000 50  0001 C CNN
+F 1 "GND" H 7055 3077 50  0000 C CNN
+F 2 "" H 7050 3250 50  0001 C CNN
+F 3 "" H 7050 3250 50  0001 C CNN
+	1    7050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3150 7050 3250
+Connection ~ 7050 3150
+Wire Wire Line
+	5850 2650 5850 2900
+Wire Wire Line
+	5850 2650 6300 2650
+Wire Wire Line
+	6300 3000 6100 3000
+Wire Wire Line
+	6100 3000 6100 3500
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E8090C8
+P 7400 2350
+F 0 "J?" V 7500 2500 50  0000 R CNN
+F 1 "Conn_01x03" V 7500 2350 50  0000 R CNN
+F 2 "" H 7400 2350 50  0001 C CNN
+F 3 "~" H 7400 2350 50  0001 C CNN
+	1    7400 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2550 7500 2600
+Wire Wire Line
+	7500 2600 7700 2600
+Wire Wire Line
+	7700 2600 7700 2550
+Wire Wire Line
+	6100 3500 7400 3500
+Wire Wire Line
+	7300 2550 7300 2650
+Wire Wire Line
+	7400 3500 7400 2550
 $EndSCHEMATC
