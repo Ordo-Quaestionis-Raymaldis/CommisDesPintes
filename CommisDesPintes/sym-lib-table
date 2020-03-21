@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name custom_components)(type Legacy)(uri ${KIPRJMOD}/custom_components.lib)(options "")(descr ""))
+  (lib (name custom_components_-_Copie)(type Legacy)(uri "${KIPRJMOD}/custom_components - Copie.lib")(options "")(descr ""))
 )

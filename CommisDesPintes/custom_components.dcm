@@ -5,4 +5,5 @@ D Dual Timer, DIP-14/SOIC-14
 K dual timer
 F http://www.ti.com/lit/ds/symlink/lm556.pdf
 $ENDCMP
+#
 #End Doc Library
